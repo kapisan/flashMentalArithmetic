@@ -19,12 +19,12 @@ class ViewController: UIViewController {
     @IBAction func startActionButton(_ sender: UIButton) {
         //ラベルに表示する箱を準備
         var displayLabelNumber:Int = 0
-        //ランダムな数字を作った時に入れる変数を準備
-//        var randomNumber: Int = 0
-        //ランダムな数字を作成
-        let randomNumber = Int.random(in: 1..<9)
         //ランダムな数字を表示（2秒間）
         //表示回数が5回以下ならループ（5回表示したら画面遷移）
+        for _ in 1 ..< 6 {
+            //ランダムな数字を生成
+           var randomNumber = Int.random(in: 1..<9)
+        }
 
     }
 
