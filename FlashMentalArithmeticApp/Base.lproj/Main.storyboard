@@ -33,6 +33,9 @@
                                 <state key="normal" title="スタート">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="startActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UCT-mU-9If"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="フラッシュ暗算" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ax-yA-Ech">
                                 <rect key="frame" x="107" y="68" width="201" height="47"/>
@@ -45,15 +48,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                     </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="GMj-HG-KFG" id="yos-H2-jvo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="113.04347826086958" y="93.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Answer View Controller-->
         <scene sceneID="Deu-In-hYI">
             <objects>
-                <viewController id="e3c-YF-fzi" sceneMemberID="viewController">
+                <viewController id="e3c-YF-fzi" customClass="AnswerViewController" customModule="FlashMentalArithmeticApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e6M-Yv-n9O">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

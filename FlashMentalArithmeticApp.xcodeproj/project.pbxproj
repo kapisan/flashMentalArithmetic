@@ -13,6 +13,7 @@
 		79145DC5269DB545008FAEAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79145DC3269DB545008FAEAC /* Main.storyboard */; };
 		79145DC7269DB547008FAEAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79145DC6269DB547008FAEAC /* Assets.xcassets */; };
 		79145DCA269DB547008FAEAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79145DC8269DB547008FAEAC /* LaunchScreen.storyboard */; };
+		79145DD4269E6A59008FAEAC /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79145DD3269E6A59008FAEAC /* AnswerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		79145DC6269DB547008FAEAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79145DC9269DB547008FAEAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79145DCB269DB547008FAEAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79145DD3269E6A59008FAEAC /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				79145DBD269DB545008FAEAC /* AppDelegate.swift */,
 				79145DBF269DB545008FAEAC /* SceneDelegate.swift */,
 				79145DC1269DB545008FAEAC /* ViewController.swift */,
+				79145DD3269E6A59008FAEAC /* AnswerViewController.swift */,
 				79145DC3269DB545008FAEAC /* Main.storyboard */,
 				79145DC6269DB547008FAEAC /* Assets.xcassets */,
 				79145DC8269DB547008FAEAC /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79145DD4269E6A59008FAEAC /* AnswerViewController.swift in Sources */,
 				79145DC2269DB545008FAEAC /* ViewController.swift in Sources */,
 				79145DBE269DB545008FAEAC /* AppDelegate.swift in Sources */,
 				79145DC0269DB545008FAEAC /* SceneDelegate.swift in Sources */,
