@@ -33,18 +33,38 @@ class ViewController: UIViewController {
 
     @objc func changeColor() {
         x += 1
-        if x == 1 {
+//        if x == 1 {
+//            displayLabel.text = String(wRandomArray[0])
+//        } else if x == 2 {
+//            displayLabel.text = String(wRandomArray[1])
+//        } else if x == 3 {
+//            displayLabel.text = String(wRandomArray[2])
+//        } else if x == 4 {
+//            displayLabel.text = String(wRandomArray[3])
+//        } else if x == 5 {
+//            displayLabel.text = String(wRandomArray[4])
+//            x = 0
+//            self.btnTimer.invalidate()
+//        }
+
+        switch x {
+        case 1:
             displayLabel.text = String(wRandomArray[0])
-        } else if x == 2 {
+        case 2:
             displayLabel.text = String(wRandomArray[1])
-        } else if x == 3 {
+        case 3:
             displayLabel.text = String(wRandomArray[2])
-        } else if x == 4 {
+        case 4:
             displayLabel.text = String(wRandomArray[3])
-        } else if x == 5 {
+        case 5:
             displayLabel.text = String(wRandomArray[4])
+        case 6:
             x = 0
             self.btnTimer.invalidate()
+            displayLabel.text = ""
+            print("画面遷移")
+        default:
+            print("対象外")
         }
     }
     @IBAction func startActionButton(_ sender: UIButton) {
