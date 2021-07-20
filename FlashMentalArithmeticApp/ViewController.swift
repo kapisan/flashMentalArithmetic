@@ -13,12 +13,15 @@ class ViewController: UIViewController {
 
     var numberArray = [Int]()
     var newNumberArray = [Int]()
+//    var answerArray = [Int]()
     var count = 0
     var x = 0
     var btnTimer: Timer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
 
         numberArray = [1,2,3,4,5,6,7,8,9]
         newNumberArray = numberArray.shuffled()
@@ -51,7 +54,10 @@ class ViewController: UIViewController {
             count = 0
             self.btnTimer.invalidate()
             displayLabel.text = ""
-            numberArray.removeAll()
+//            numberArray.removeAll()
+            let nextVC = self.storyboard?.instantiateViewController(identifier: "answerView") as! AnswerViewController
+            nextVC.answerArray = newNumberArray
+            self.navigationController?.pushViewController(nextVC, animated: true)
             print("画面遷移")
         default:
             print("対象外")
