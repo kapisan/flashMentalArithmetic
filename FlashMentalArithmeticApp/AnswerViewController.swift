@@ -17,6 +17,9 @@ class AnswerViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //キーボードで数字のみを表示
+        self.answerTextField.keyboardType = UIKeyboardType.numbersAndPunctuation
+
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         self.answerTextField.delegate = self
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
@@ -31,6 +34,8 @@ class AnswerViewController: UIViewController, UITextFieldDelegate {
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+
+        label.text = answerTextField.text
         //キーボードを閉じる
         textField.resignFirstResponder()
 
