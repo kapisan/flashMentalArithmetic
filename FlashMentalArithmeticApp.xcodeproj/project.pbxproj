@@ -14,7 +14,7 @@
 		79145DC7269DB547008FAEAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79145DC6269DB547008FAEAC /* Assets.xcassets */; };
 		79145DCA269DB547008FAEAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79145DC8269DB547008FAEAC /* LaunchScreen.storyboard */; };
 		79145DD4269E6A59008FAEAC /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79145DD3269E6A59008FAEAC /* AnswerViewController.swift */; };
-		C1E7F289FAA0042127454D60 /* Pods_FlashMentalArithmeticApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1F86BB7AE2FBC90D37CEA91 /* Pods_FlashMentalArithmeticApp.framework */; };
+		CF891F2BF88D6779A7E06ABD /* Pods_FlashMentalArithmeticApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1F86BB7AE2FBC90D37CEA91 /* Pods_FlashMentalArithmeticApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1E7F289FAA0042127454D60 /* Pods_FlashMentalArithmeticApp.framework in Frameworks */,
+				CF891F2BF88D6779A7E06ABD /* Pods_FlashMentalArithmeticApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +105,6 @@
 				79145DB6269DB545008FAEAC /* Sources */,
 				79145DB7269DB545008FAEAC /* Frameworks */,
 				79145DB8269DB545008FAEAC /* Resources */,
-				791C70B626A81A810018756D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -183,23 +182,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		791C70B626A81A810018756D /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which \"${PODS_ROOT}/SwiftLint/swiftlint\"\n >/dev/null; then\n  \"${PODS_ROOT}/SwiftLint/swiftlint\"\n\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

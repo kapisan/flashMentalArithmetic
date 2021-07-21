@@ -1,0 +1,6 @@
+framework module Pods_FlashMentalArithmeticApp {
+  umbrella header "Pods-FlashMentalArithmeticApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
