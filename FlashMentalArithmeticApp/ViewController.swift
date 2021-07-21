@@ -21,7 +21,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
+//        self.navigationController?.setNavigationBarHidden(true, animated: false)
+//        self.navigationController?.navigationBar.backgroundColor = .none
+
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
 
         numberArray = [1,2,3,4,5,6,7,8,9]
         newNumberArray = numberArray.shuffled()

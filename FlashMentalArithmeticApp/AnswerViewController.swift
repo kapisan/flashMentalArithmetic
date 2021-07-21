@@ -20,7 +20,7 @@ class AnswerViewController: UIViewController, UITextFieldDelegate {
         //キーボードで数字のみを表示
         self.answerTextField.keyboardType = UIKeyboardType.numbersAndPunctuation
 
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
+//        self.navigationController?.setNavigationBarHidden(true, animated: false)
         self.answerTextField.delegate = self
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
