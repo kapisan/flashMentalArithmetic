@@ -14,7 +14,6 @@ class AnswerViewController: UIViewController, UITextFieldDelegate {
     
     var answerArray = [Int]()
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,12 +24,9 @@ class AnswerViewController: UIViewController, UITextFieldDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
 
+        label.adjustsFontSizeToFitWidth = true
+
         print(answerArray)
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         case 5:
             displayLabel.text = String(newNumberArray[4])
         case 6:
-//            x = 0
+
             count = 0
             self.btnTimer.invalidate()
             displayLabel.text = ""
