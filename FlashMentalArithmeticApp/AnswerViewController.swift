@@ -8,16 +8,14 @@
 import UIKit
 
 class AnswerViewController: UIViewController, UITextFieldDelegate {
-
     @IBOutlet private weak var label: UILabel!
     @IBOutlet private weak var answerTextField: UITextField!
-    
     var answerArray = [Int]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //キーボードで数字と記号のみを表示
+        // キーボードで数字と記号のみを表示
         self.answerTextField.keyboardType = UIKeyboardType.numbersAndPunctuation
 
         self.answerTextField.delegate = self
@@ -30,7 +28,6 @@ class AnswerViewController: UIViewController, UITextFieldDelegate {
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-
         let result: Int = answerArray.reduce(0) { $0 + $1 }
 
         var answerInt = 0
@@ -47,7 +44,7 @@ class AnswerViewController: UIViewController, UITextFieldDelegate {
             print("不正解")
             label.text = "不正解"
         }
-        //キーボードを閉じる
+        // キーボードを閉じる
         textField.resignFirstResponder()
 
         return true
@@ -69,5 +66,4 @@ class AnswerViewController: UIViewController, UITextFieldDelegate {
             self.view.frame.origin.y = 0
         }
     }
-
 }
