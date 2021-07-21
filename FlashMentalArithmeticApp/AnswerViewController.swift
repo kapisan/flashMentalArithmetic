@@ -14,13 +14,13 @@ class AnswerViewController: UIViewController, UITextFieldDelegate {
     
     var answerArray = [Int]()
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //キーボードで数字のみを表示
+        //キーボードで数字と記号のみを表示
         self.answerTextField.keyboardType = UIKeyboardType.numbersAndPunctuation
 
-//        self.navigationController?.setNavigationBarHidden(true, animated: false)
         self.answerTextField.delegate = self
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
@@ -35,7 +35,22 @@ class AnswerViewController: UIViewController, UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
 
-        label.text = answerTextField.text
+        let result: Int = answerArray.reduce(0) { $0 + $1 }
+
+        var answerInt = 0
+
+        if textField.text != nil {
+            answerInt = Int(textField.text!)!
+        }
+
+        print(result)
+        if result == answerInt {
+            print("正解")
+            label.text = "正解"
+        } else {
+            print("不正解")
+            label.text = "不正解"
+        }
         //キーボードを閉じる
         textField.resignFirstResponder()
 
