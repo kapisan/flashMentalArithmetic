@@ -13,6 +13,8 @@
 		79145DC5269DB545008FAEAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79145DC3269DB545008FAEAC /* Main.storyboard */; };
 		79145DC7269DB547008FAEAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79145DC6269DB547008FAEAC /* Assets.xcassets */; };
 		79145DCA269DB547008FAEAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79145DC8269DB547008FAEAC /* LaunchScreen.storyboard */; };
+		79145DD4269E6A59008FAEAC /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79145DD3269E6A59008FAEAC /* AnswerViewController.swift */; };
+		CF891F2BF88D6779A7E06ABD /* Pods_FlashMentalArithmeticApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1F86BB7AE2FBC90D37CEA91 /* Pods_FlashMentalArithmeticApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		79145DC6269DB547008FAEAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79145DC9269DB547008FAEAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79145DCB269DB547008FAEAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79145DD3269E6A59008FAEAC /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
+		C1F86BB7AE2FBC90D37CEA91 /* Pods_FlashMentalArithmeticApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlashMentalArithmeticApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D335D7683C140BC6B11F669F /* Pods-FlashMentalArithmeticApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashMentalArithmeticApp.release.xcconfig"; path = "Target Support Files/Pods-FlashMentalArithmeticApp/Pods-FlashMentalArithmeticApp.release.xcconfig"; sourceTree = "<group>"; };
+		E0ACD65E0760252ECF1BE24F /* Pods-FlashMentalArithmeticApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashMentalArithmeticApp.debug.xcconfig"; path = "Target Support Files/Pods-FlashMentalArithmeticApp/Pods-FlashMentalArithmeticApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF891F2BF88D6779A7E06ABD /* Pods_FlashMentalArithmeticApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60A5475E340D9555C4192A88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1F86BB7AE2FBC90D37CEA91 /* Pods_FlashMentalArithmeticApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		79145DB1269DB545008FAEAC = {
 			isa = PBXGroup;
 			children = (
 				79145DBC269DB545008FAEAC /* FlashMentalArithmeticApp */,
 				79145DBB269DB545008FAEAC /* Products */,
+				D6C22E5DA3485BE909FFF250 /* Pods */,
+				60A5475E340D9555C4192A88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +76,22 @@
 				79145DBD269DB545008FAEAC /* AppDelegate.swift */,
 				79145DBF269DB545008FAEAC /* SceneDelegate.swift */,
 				79145DC1269DB545008FAEAC /* ViewController.swift */,
+				79145DD3269E6A59008FAEAC /* AnswerViewController.swift */,
 				79145DC3269DB545008FAEAC /* Main.storyboard */,
 				79145DC6269DB547008FAEAC /* Assets.xcassets */,
 				79145DC8269DB547008FAEAC /* LaunchScreen.storyboard */,
 				79145DCB269DB547008FAEAC /* Info.plist */,
 			);
 			path = FlashMentalArithmeticApp;
+			sourceTree = "<group>";
+		};
+		D6C22E5DA3485BE909FFF250 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0ACD65E0760252ECF1BE24F /* Pods-FlashMentalArithmeticApp.debug.xcconfig */,
+				D335D7683C140BC6B11F669F /* Pods-FlashMentalArithmeticApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +101,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79145DCE269DB547008FAEAC /* Build configuration list for PBXNativeTarget "FlashMentalArithmeticApp" */;
 			buildPhases = (
+				787A6E867F94A47729B6E87C /* [CP] Check Pods Manifest.lock */,
 				79145DB6269DB545008FAEAC /* Sources */,
 				79145DB7269DB545008FAEAC /* Frameworks */,
 				79145DB8269DB545008FAEAC /* Resources */,
@@ -132,11 +160,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		787A6E867F94A47729B6E87C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlashMentalArithmeticApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		79145DB6269DB545008FAEAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79145DD4269E6A59008FAEAC /* AnswerViewController.swift in Sources */,
 				79145DC2269DB545008FAEAC /* ViewController.swift in Sources */,
 				79145DBE269DB545008FAEAC /* AppDelegate.swift in Sources */,
 				79145DC0269DB545008FAEAC /* SceneDelegate.swift in Sources */,
@@ -283,6 +337,7 @@
 		};
 		79145DCF269DB547008FAEAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0ACD65E0760252ECF1BE24F /* Pods-FlashMentalArithmeticApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +357,7 @@
 		};
 		79145DD0269DB547008FAEAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D335D7683C140BC6B11F669F /* Pods-FlashMentalArithmeticApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
