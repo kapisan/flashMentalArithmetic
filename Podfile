@@ -7,4 +7,5 @@ target 'FlashMentalArithmeticApp' do
 
   # Pods for FlashMentalArithmeticApp
   pod 'SwiftLint'
+
 end
